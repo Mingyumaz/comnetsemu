@@ -141,3 +141,11 @@ examples/**/*.gz
 examples/**/*.png
 
 prototype/*
+
+---------------------
+-  Network capture  -
+---------------------
+*.pcap
+*_cli_output.log
+*.p4i
+
