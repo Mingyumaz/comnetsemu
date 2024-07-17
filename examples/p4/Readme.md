@@ -1,9 +1,26 @@
 # P4 Getting started
 
 > This function is not yet developed and still requires the external plug-in P4-Utils
+## **Step 1**: `Git` switches remote repositories and branches
 
+```bash
+# first open the dir of comnetsemu
+cd ~/comnetsemu
 
-## Install `P4-Utils` -> Manual Installation
+# change the remote repo
+git remote rm origin
+git remote add origin https://github.com/Mingyumaz/comnetsemu.git
+git pull
+
+# change the branch
+git checkout origin/dev-p4
+git pull
+
+# re-install the comnetsemu
+./util/install.sh -a
+```
+
+## **Step 2**: Install `P4-Utils` -> Manual Installation
 
 P4-Utils is an extension to *Mininet* that makes P4 networks easier to build, run and debug. P4-utils is strongly
 inspired by [p4app](https://github.com/p4lang/p4app). Here we only provide a quick summary of the main information
@@ -14,6 +31,7 @@ If you have already installed all the [requirements](#requirements), you can sim
 install P4-Utils using the following commands:
 
 ```bash
+cd ~
 git clone https://github.com/nsg-ethz/p4-utils.git
 cd p4-utils
 sudo ./install.sh

@@ -18,10 +18,15 @@ We have implemented the functionality of IP router as P4 program (router.p4). Th
 
 ### Demo ###
 
-
-<p align="center">
-  <img src="images/Network.png" />
-</p>
+```
+h1 ----                               ---- h3
+      |                              |
+      |                              |
+       s1|-------------------------|s2
+      |                              |
+      |                              |
+h2 ----                               ---- h4
+```
 
 1. First of all you need to setup the environment on your Linux machine.
 
@@ -29,12 +34,10 @@ We have implemented the functionality of IP router as P4 program (router.p4). Th
 
 `sudo python3 network.py`
 
-4. In the Mininet console, check if ping between h1 and h2 works
+3. In the Mininet console, check if ping between h1 and h2 works
 
 `h1 ping h2`
 or `h1 ping h3` etc.
-
-5. Have a nice day!
 
 
 ## Reference

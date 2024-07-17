@@ -7,10 +7,15 @@ The objective of this tutorial is to implement a basic calculator using a custom
 
 ### Demo ###
 
-
-<p align="center">
-  <img src="images/Network.png" />
-</p>
+```
+h1 ----  
+      |    
+      |    
+       s1|
+      |  
+      | 
+h2 ---- 
+```
 
 ### Introduction ###
 
