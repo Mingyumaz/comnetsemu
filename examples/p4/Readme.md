@@ -12,9 +12,17 @@ git remote rm origin
 git remote add origin https://github.com/Mingyumaz/comnetsemu.git
 git pull
 
+# check the modification, there should be https://github.com/Mingyumaz/comnetsemu.git
+git remote -v
+
 # change the branch
 git checkout origin/dev-p4
 git pull
+
+## if before does not work, try
+# git fetch origin
+# git switch -c dev-p4 origin/dev-p4
+# git pull
 
 # re-install the comnetsemu
 ./util/install.sh -a
